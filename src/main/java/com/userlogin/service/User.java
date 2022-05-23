@@ -1,29 +1,26 @@
 package com.userlogin.service;
 
 public class User {
-	private String strName, strUserName, strPassword;
-
-	public String getStrName() {
-		return strName;
+	private String Name, Username, Password;
+	
+	public User() {
 	}
 
-	public void setStrName(String strName) {
-		this.strName = strName;
+	public void setName(String name) {
+		Name = name;
 	}
 
-	public String getStrUserName() {
-		return strUserName;
+	public void setUsername(String username) {
+		Username = username;
 	}
 
-	public void setStrUserName(String strUserName) {
-		this.strUserName = strUserName;
+	public void setPassword(String password) {
+		Password = password;
 	}
 
-	public String getStrPassword() {
-		return strPassword;
-	}
-
-	public void setStrPassword(String strPassword) {
-		this.strPassword = strPassword;
+	public User(String name, String username, String password) {
+		Name = name;
+		Username = username;
+		Password = password;
 	}
 }
